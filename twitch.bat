@@ -6,7 +6,7 @@ SET /P URL="[Enter video URL] "
 ECHO.
 ECHO ======================================================================================================================
 ECHO.
-yt-dlp -o Twitch/%%(title)s.%%(ext)s -S "ext:mp4, height:720, fps:30" --hls-prefer-native --ignore-config --download-archive Twitch-Archive.txt %vid% %URL%
+yt-dlp -o Twitch/%%(title)s.%%(ext)s -S "ext:mp4, height:720, fps:30" --hls-prefer-native --ignore-config --download-archive Archive-Twitch.txt %vid% %URL%
 ECHO.
 ECHO ======================================================================================================================
 ECHO.
